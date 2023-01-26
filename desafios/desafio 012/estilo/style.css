@@ -66,11 +66,29 @@ section.normal {
 section.imagem {
     background-color: rgb(116, 113, 113);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     width: 400px;
-    background-color: rgb(77, 77, 77);
+    background-color: rgba(77, 77, 77, 0.384);
+    text-shadow: 1px 1px 0px black;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url('../imagens/joaninha.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/a\ carta.jpg');
+    background-size: cover;
 }
 
 footer {
