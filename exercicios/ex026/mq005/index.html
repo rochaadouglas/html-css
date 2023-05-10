@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="@">Opção 1</a></li>
                 <li><a href="@">Opção 2</a></li>
@@ -30,5 +32,15 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae odit, repellat vel rerum excepturi eveniet quibusdam perspiciatis, reiciendis et dignissimos esse suscipit ex dicta delectus facere nobis ad, nam aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi asperiores harum consectetur voluptate expedita quidem excepturi quos nisi? Iure perspiciatis omnis quasi voluptatibus itaque architecto incidunt! Aliquid consectetur expedita reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloremque exercitationem id iusto, cum sunt soluta quos asperiores nesciunt nostrum! Vel corporis voluptatem quae ipsam hic necessitatibus esse sapiente pariatur.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else { 
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
 </body>
 </html>
